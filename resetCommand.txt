@@ -1,0 +1,4 @@
+git reset --soft HEAD~1   remove from commit
+git reset --mixed HEAD~1   remove from commit and stagging area
+git reset --hard HEAD~1   remove from commit and stagging area and working file also
+GIT reset HEAD~1  same as second command

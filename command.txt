@@ -1,0 +1,34 @@
+PS C:\Users\RUPESH\Desktop\GitPractice\GitRestore> git log 
+commit b51cb84c08802a53a5e3f77401da7530eb7027eb (HEAD -> GitRestore, origin/GitRestore)
+Author: rupesh2004 <bhosalerupesh67@gmail.com>
+Date:   Sat Jun 27 18:00:01 2026 +0530
+
+    restore commit
+
+commit ac373ce34ab5043cc8bd27a459e21d1764c0878c
+Author: rupesh2004 <bhosalerupesh67@gmail.com>
+PS C:\Users\RUPESH\Desktop\GitPractice\GitRestore> 
+PS C:\Users\RUPESH\Desktop\GitPractice\GitRestore> git log --oneline
+b51cb84 (HEAD -> GitRestore, origin/GitRestore) restore commit
+ac373ce restore commit
+PS C:\Users\RUPESH\Desktop\GitPractice\GitRestore> git revert b51cb84
+[GitRestore b11e330] Revert "restore commit"
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+PS C:\Users\RUPESH\Desktop\GitPractice\GitRestore> git add .         
+PS C:\Users\RUPESH\Desktop\GitPractice\GitRestore> git commit -m "revert commit" 
+On branch GitRestore
+Your branch is ahead of 'origin/GitRestore' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\RUPESH\Desktop\GitPractice\GitRestore> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/rupesh2004/GitPractice.git
+   b51cb84..b11e330  GitRestore -> GitRestore
+PS C:\Users\RUPESH\Desktop\GitPractice\GitRestore> 
